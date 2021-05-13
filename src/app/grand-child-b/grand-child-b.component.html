@@ -1,6 +1,8 @@
-<h4>Componente Nieto B</h4>
-<mat-card>
-    <mat-card-content>
+<mat-card *ngIf="comunicationService.message; else empty">
+    <mat-card-title class="card_title">
+        Algunas características del número:
+    </mat-card-title>
+    <mat-card-content class="first_element">
         El doble del número es: {{getDouble(comunicationService.message)}}
     </mat-card-content>
     <mat-card-content>
@@ -13,7 +15,8 @@
         El cuadrado del número es: {{getSquare(comunicationService.message)}}
     </mat-card-content>
     <mat-card-content>
-        La raíz cuadrada del número es : <span *ngIf="getSquareRoot(comunicationService.message) != -1; else negative">
+        La raíz cuadrada del número es : 
+        <span *ngIf="getSquareRoot(comunicationService.message) != -1; else negative">
             {{getSquareRoot(comunicationService.message)}}</span>
         <ng-template #negative><span>Es un número negativo</span></ng-template> 
     </mat-card-content>
@@ -24,12 +27,16 @@
         El coseno del número es : {{getCos(comunicationService.message)}}
     </mat-card-content>    
     <mat-card-content >
-        La parte entera del número: 
+        ¿Es la parte entera un número primo? 
         <span class="resaltar" *ngIf="!isPrime(comunicationService.message); else prime">No es primo</span>
         <ng-template #prime><span class="resaltar">Es primo</span></ng-template>            
-    </mat-card-content>
-    <mat-card-content>
-        La parte entera del número es : {{getInt(comunicationService.message)}}
-    </mat-card-content> 
+    </mat-card-content>   
 </mat-card>
+<ng-template #empty>
+    <mat-card>
+        <mat-card-title>
+            Teclea un número en el input de la izquierda.
+        </mat-card-title>
+    </mat-card>
+</ng-template>
 

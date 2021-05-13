@@ -1,11 +1,9 @@
-<h4>Componente hijo A</h4>
 <mat-form-field>
     <mat-label>Teclea un número</mat-label>
-    <input type="number" matInput placeholder="Ejemplo: 23" 
-    (input)="changeNumber($event.target.value)"
-    [(ngModel)]="mensaje">
+        <input type="number" matInput placeholder="Ejemplo: 23"
+            (input)="changeNumber($event.target.value)"
+            [(ngModel)]="mensaje">        
 </mat-form-field>
-
-<!--<p>Escribe tu texto aquí</p>
-<textarea (input)="changeText($event.target.value)"
-[(ngModel)]="mensaje" class="textarea_grandchildA"></textarea>-->
+<h5 *ngIf="!isEmpty(mensaje) && !mensaje" class="remarked">    
+    Asegúrate de teclear un número    
+</h5>

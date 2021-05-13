@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ComunicationService } from './services/comunication.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,5 @@ import { ComunicationService } from './services/comunication.service';
 })
 export class AppComponent {
   
-  constructor (public comunicationService: ComunicationService){
-    
-  }
+  constructor (){ }
 }

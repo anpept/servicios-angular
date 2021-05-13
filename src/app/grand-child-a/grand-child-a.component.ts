@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ComunicationService } from '../services/comunication.service';
 
 @Component({
@@ -19,6 +20,10 @@ export class GrandChildAComponent implements OnInit {
 
   changeNumber(mensaje: number){
     this.comunicationService.sendMessage(mensaje);
+  }
+
+  isEmpty(value): boolean{
+    return isNaN(value);
   }
 
 }

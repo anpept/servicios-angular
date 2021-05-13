@@ -54,20 +54,21 @@ export class GrandChildBComponent implements OnInit {
       return Math.cos(number);
     }
   }
+
   isPrime(number): boolean{
     if (number){
-      var truncNumber = Math.trunc(number);
-      for (var i = 2; i < truncNumber; i++){
-        if (truncNumber % i === 0){
-          return false
+      if (number <= 0){
+        return false;
+      } else {
+        var truncNumber = Math.trunc(number);
+        for (var i = 2; i < truncNumber; i++){
+          if (truncNumber % i === 0){
+            return false
+          }
         }
+        console.log (truncNumber);
+       return truncNumber !== 1;
       }
-      return truncNumber !== 1;
-    }
-  }
-  getInt(number){
-    if (number){
-      return Math.trunc(number);
-    }
+    }      
   }
 }
