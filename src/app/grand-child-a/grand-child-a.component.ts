@@ -8,7 +8,7 @@ import { ComunicationService } from '../services/comunication.service';
 })
 export class GrandChildAComponent implements OnInit {
 
-  mensaje: string;
+  mensaje: number;
   constructor(private comunicationService: ComunicationService) { }
 
   ngOnInit(){
@@ -17,7 +17,7 @@ export class GrandChildAComponent implements OnInit {
     });
   }
 
-  changeText(mensaje: string){
+  changeNumber(mensaje: number){
     this.comunicationService.sendMessage(mensaje);
   }
 

@@ -1,5 +1,4 @@
-<mat-grid-tile-header> Componente Hijo B <button class="button-child-b" mat-raised-button color="primary" 
-    (click)="receiveChanges()">Recibir Cambios</button></mat-grid-tile-header>
-<div class="received-text">Esto es lo escrito: {{mensaje}}</div>
+<mat-grid-tile-header *ngIf="comunicationService.message"> El número es {{comunicationService.message}} </mat-grid-tile-header>
+<mat-grid-tile-header *ngIf="!comunicationService.message"> Teclea un número en el input de la izquierda </mat-grid-tile-header>
 
 <app-grand-child-b></app-grand-child-b>

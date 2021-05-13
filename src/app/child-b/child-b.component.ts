@@ -7,7 +7,7 @@ import { ComunicationService } from '../services/comunication.service';
   styleUrls: ['./child-b.component.scss']
 })
 export class ChildBComponent implements OnInit {
-  mensaje: string;
+  mensaje: number;
   constructor(public comunicationService: ComunicationService) { }
 
   ngOnInit(): void {

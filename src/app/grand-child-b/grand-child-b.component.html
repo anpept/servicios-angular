@@ -1,5 +1,35 @@
 <h4>Componente Nieto B</h4>
+<mat-card>
+    <mat-card-content>
+        El doble del número es: {{getDouble(comunicationService.message)}}
+    </mat-card-content>
+    <mat-card-content>
+        El triple del número es: {{getTriple(comunicationService.message)}}
+    </mat-card-content>
+    <mat-card-content>
+        La mitad del número es : {{getHalf(comunicationService.message)}}
+    </mat-card-content>
+    <mat-card-content>
+        El cuadrado del número es: {{getSquare(comunicationService.message)}}
+    </mat-card-content>
+    <mat-card-content>
+        La raíz cuadrada del número es : <span *ngIf="getSquareRoot(comunicationService.message) != -1; else negative">
+            {{getSquareRoot(comunicationService.message)}}</span>
+        <ng-template #negative><span>Es un número negativo</span></ng-template> 
+    </mat-card-content>
+    <mat-card-content>
+        El seno del número es : {{getSin(comunicationService.message)}}
+    </mat-card-content>
+    <mat-card-content>
+        El coseno del número es : {{getCos(comunicationService.message)}}
+    </mat-card-content>    
+    <mat-card-content >
+        La parte entera del número: 
+        <span class="resaltar" *ngIf="!isPrime(comunicationService.message); else prime">No es primo</span>
+        <ng-template #prime><span class="resaltar">Es primo</span></ng-template>            
+    </mat-card-content>
+    <mat-card-content>
+        La parte entera del número es : {{getInt(comunicationService.message)}}
+    </mat-card-content> 
+</mat-card>
 
-<p>Escribe aquí</p>
-<textarea (input)="changeText($event.target.value)"
-[(ngModel)]="mensaje" class="textarea_grandchildB"></textarea>

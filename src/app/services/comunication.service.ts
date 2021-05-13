@@ -6,11 +6,11 @@ import { Subject } from 'rxjs';
 })
 export class ComunicationService {
 
-  message: string;
-  private sendMessageSubject = new Subject<string>();
+  message: number;
+  private sendMessageSubject = new Subject<number>();
   sendMessageObservable = this.sendMessageSubject.asObservable();
 
-  sendMessage(message: string){
+  sendMessage(message: number){
     this.message = message;
     this.sendMessageSubject.next(message);
   }
