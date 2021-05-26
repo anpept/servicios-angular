@@ -9,6 +9,8 @@ La aplicación creada ejemplifica el uso de servicios para el paso de informaci�
 
 Se puede ver el proyecto funcionando en el siguiente enlace:
 
+https://anpept.github.io/servicios-angular/ 
+
 
 ## Desarrollado con:
 
@@ -20,8 +22,6 @@ Se puede ver el proyecto funcionando en el siguiente enlace:
 
 **Angular Material** versión: 11.2.12
 
-
-https://anpept.github.io/servicios-angular/ 
 
 ## Cómo instalar el proyecto en local
 
