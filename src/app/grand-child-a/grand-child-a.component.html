@@ -1,8 +1,7 @@
 <mat-form-field>
     <mat-label>Teclea un número</mat-label>
         <input type="number" matInput placeholder="Ejemplo: 23"
-            (input)="changeNumber($event.target.value)"
-            [(ngModel)]="mensaje">        
+            (input)="changeNumber($event.target.value)">        
 </mat-form-field>
 <h5 *ngIf="!isEmpty(mensaje) && !mensaje" class="remarked">    
     Asegúrate de teclear un número    

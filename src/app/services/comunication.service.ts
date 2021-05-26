@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 export class ComunicationService {
 
   message: number;
-  private sendMessageSubject = new Subject<number>();
+  private sendMessageSubject = new Subject<number>(); //permite enviar mensajes a multiples observadores.
   sendMessageObservable = this.sendMessageSubject.asObservable();
 
   sendMessage(message: number){
