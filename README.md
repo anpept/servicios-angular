@@ -3,7 +3,11 @@
 La aplicación desarrollada para esta práctica está basada en el siguiente vídeo:
 https://www.youtube.com/watch?v=w5cCsoOs8SI
 
-La aplicación creada ejemplifica el uso de servicios para el paso de información entre componentes de Angular. La aplicación que he desarrollado es sencilla y se basa en realizar algunas operaciones sobre el número que se introduzca en campo input de un componente y mostrar los resultados en otro componente.  
+La aplicación creada ejemplifica el uso de servicios para el paso de información entre componentes de Angular. La aplicación que he desarrollado es sencilla y se basa en realizar algunas operaciones sobre el número que se introduzca en campo *input* de un componente y mostrar los resultados en otro componente.  
+
+###### Demo
+
+Se puede ver el proyecto funcionando en el siguiente enlace:
 
 
 ## Desarrollado con:
@@ -16,9 +20,6 @@ La aplicación creada ejemplifica el uso de servicios para el paso de informaci�
 
 **Angular Material** versión: 11.2.12
 
-###### Demo
-
-Se puede ver el proyecto funcionando en el siguiente enlace:
 
 https://anpept.github.io/servicios-angular/ 
 
