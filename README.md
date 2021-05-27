@@ -1,13 +1,16 @@
 # DAW2 - Ejemplo de uso de servicios y routing
 
+###### Este proyecto es una práctica para la asignatura de la ULPGC “Desarrollo de aplicaciones II”.
+
 La aplicación desarrollada para esta práctica está basada en el siguiente vídeo:
+
 https://www.youtube.com/watch?v=w5cCsoOs8SI
 
 La aplicación creada ejemplifica el uso de servicios para el paso de información entre componentes de Angular. La aplicación que he desarrollado es sencilla y se basa en realizar algunas operaciones sobre el número que se introduzca en campo *input* de un componente y mostrar los resultados en otro componente.  
 
 ###### Demo
 
-Se puede ver el proyecto funcionando en el siguiente enlace:
+Se puede ver el proyecto en funcionamiento en el siguiente enlace:
 
 https://anpept.github.io/servicios-angular/ 
 
@@ -25,11 +28,11 @@ https://anpept.github.io/servicios-angular/
 
 ## Cómo instalar el proyecto en local
 
-Para instalarlo es necesario que tenga instalado los siguientes programas:
+Para instalarlo, es necesario que se tengan instalados los siguientes programas:
 
 *Node.js* y *Angular*
 
-Para instalarlo clone o descargue el zip. Y en la carpeta de extracción usar el comando:
+Para instalarlo, clone o descargue el zip. Y en la carpeta de extracción usar el comando:
 
 ```Npm install```
 
